@@ -1,9 +1,13 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
+import SideNavBar from "./components/sideNavBar/sideNavbar";
 
 function App() {
-  return <div className="App" />;
+  return (
+    <div className="App">
+      <SideNavBar />
+    </div>
+  );
 }
 
 export default App;

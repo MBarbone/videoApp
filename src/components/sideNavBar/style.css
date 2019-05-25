@@ -1,0 +1,43 @@
+.fa-play {
+  margin: 10px 0px 10px 5px;
+  color: orangered;
+}
+
+.sidenav {
+  position: fixed;
+  z-index: 1;
+  margin-top: 5px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.267);
+  overflow-x: hidden;
+  padding: 8px 0;
+  border: 0.5px solid rgb(56, 56, 56);
+  text-align: center;
+}
+
+.sidenav a {
+  padding: 35px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(202, 199, 199);
+  display: block;
+}
+
+.sidenav a:hover {
+  color: white;
+}
+
+.main {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
