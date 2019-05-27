@@ -1,5 +1,15 @@
+.sidenav-container {
+  position: fixed;
+  z-index: 1;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.267);
+  overflow-x: hidden;
+  padding: 8px 0;
+  text-align: center;
+}
+
 .fa-play {
-  margin: 10px 0px 10px 5px;
+  margin: 5px 0px 10px 5px;
   color: orangered;
 }
 
@@ -16,7 +26,7 @@
 }
 
 .sidenav a {
-  padding: 35px 8px;
+  padding: 25px 8px;
   text-decoration: none;
   font-size: 25px;
   color: rgb(202, 199, 199);
@@ -25,19 +35,4 @@
 
 .sidenav a:hover {
   color: white;
-}
-
-.main {
-  margin-left: 140px; /* Same width as the sidebar + left position in px */
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-  .sidenav a {
-    font-size: 18px;
-  }
 }
