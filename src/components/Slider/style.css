@@ -1,15 +1,15 @@
-.film-container {
+.slider-container {
   display: flex;
   padding: 0 55px;
 }
 
-.film-container:hover .item {
+.slider-container:hover .item {
   transform: translateX(-25%);
 }
 
 .item {
   background: green;
-  flex: 0 0 19.7%;
+  flex: 0 0 20%;
   text-align: center;
   margin: 0 2px;
   transition: transform 300ms ease 100ms;

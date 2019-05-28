@@ -1,15 +1,15 @@
 import React from "react";
 import "./App.css";
-import SideNavBar from "./components/sideNavBar/index";
+import NavBar from "./components/NavBar/index";
 import Hero from "./components/hero/index";
-import FilmRoll from "./components/filmRoll";
+import Slider from "./components/Slider/index";
 
 function App() {
   return (
     <div className="App">
-      <SideNavBar />
+      <NavBar />
       <Hero />
-      <FilmRoll />
+      <Slider />
     </div>
   );
 }
