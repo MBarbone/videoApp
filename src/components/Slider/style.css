@@ -1,6 +1,6 @@
 .slider-container {
   display: flex;
-  padding: 0 55px;
+  /* padding: 0 55px; */
 }
 
 .slider-container:hover .item {

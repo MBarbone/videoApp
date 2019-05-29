@@ -1,9 +1,25 @@
 .hero {
-  height: 500px;
+  height: 650px;
   width: auto;
   background-size: cover;
   background-position: center;
   position: relative;
   top: 0;
   background-color: white;
+}
+
+.hero-btn-container {
+  position: absolute;
+  left: 35px;
+  bottom: 70px;
+}
+
+.hero-btn {
+  padding: 10px;
+  margin: 5px 5px 5px 0;
+}
+
+.fa-plus,
+.fa-info-circle {
+  margin-right: 5px;
 }
