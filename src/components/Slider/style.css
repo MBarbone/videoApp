@@ -1,9 +1,11 @@
-.slider-container {
+.slider-item-container {
   display: flex;
-  /* padding: 0 55px; */
+  text-align: left;
+  width: 95%;
+  margin: auto;
 }
 
-.slider-container:hover .item {
+.slider-item-container:hover .item {
   transform: translateX(-25%);
 }
 
@@ -13,7 +15,7 @@
   text-align: center;
   margin: 0 2px;
   transition: transform 300ms ease 100ms;
-  height: 800px;
+  height: 225px;
 }
 
 .item:hover ~ .item {
@@ -22,4 +24,9 @@
 
 .item:hover {
   transform: scale(1.5) !important;
+}
+
+.section-title {
+  margin: 30px 0 15px 55px;
+  color: rgb(214, 213, 213);
 }
