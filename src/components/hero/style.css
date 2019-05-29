@@ -1,5 +1,5 @@
 .hero {
-  height: 650px;
+  height: 750px;
   width: auto;
   background-size: cover;
   background-position: center;
@@ -10,7 +10,7 @@
 
 .hero-btn-container {
   position: absolute;
-  left: 35px;
+  left: 55px;
   bottom: 70px;
 }
 
