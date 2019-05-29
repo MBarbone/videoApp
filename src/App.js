@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Div from "./components/NavBar/index";
-import Hero from "./components/hero/index";
+import Hero from "./components/Hero/index";
 import Slider from "./components/Slider/index";
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
     <div className="App">
       <Div />
       <Hero />
+      <Slider />
       <Slider />
     </div>
   );

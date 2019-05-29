@@ -1,7 +1,7 @@
-import React from "./node_modules/react";
+import React from "react";
 import "./style.css";
 
-function Hero(props) {
+function Hero() {
   return (
     <div className="hero">
       <div className="hero-btn-container">
