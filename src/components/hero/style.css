@@ -1,9 +1,9 @@
 .hero {
   height: 500px;
+  width: auto;
   background-size: cover;
   background-position: center;
   position: relative;
   top: 0;
   background-color: white;
-  border-radius: 20px;
 }
