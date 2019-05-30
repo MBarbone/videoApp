@@ -1,6 +1,5 @@
 .slider-item-container {
   display: flex;
-  text-align: left;
   width: 95%;
   margin: auto;
 }
@@ -11,7 +10,7 @@
 
 .item {
   background: green;
-  flex: 0 0 20%;
+  flex: 0 0 19.7%;
   text-align: center;
   margin: 0 2px;
   transition: transform 300ms ease 100ms;
