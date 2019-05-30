@@ -1,4 +1,5 @@
 import React from "react";
+require("dotenv").config();
 import "./App.css";
 import Div from "./components/NavBar/index";
 import Hero from "./components/Hero/index";
