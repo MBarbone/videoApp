@@ -1,9 +1,9 @@
 import React from "react";
-require("dotenv").config();
 import "./App.css";
 import Div from "./components/NavBar/index";
 import Hero from "./components/Hero/index";
 import Slider from "./components/Slider/index";
+require("dotenv").config();
 
 function App() {
   return (
