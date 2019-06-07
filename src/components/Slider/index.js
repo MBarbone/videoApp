@@ -21,7 +21,8 @@ import "./style.css";
 
 class Slider extends React.Component {
   state = {
-    result: {}
+    result: [],
+    poster: ""
   };
 
   componentDidMount() {
@@ -30,7 +31,7 @@ class Slider extends React.Component {
 
   discoverMovies = query => {
     API.discoverMovies()
-      .then(res => console.log(res))
+      .then(data => this.setState({ title: data.data.results[0].title }))
       .catch(err => console.log(err));
   };
 
@@ -39,11 +40,7 @@ class Slider extends React.Component {
       <div>
         <h3 className="section-title">Title of Section</h3>
         <div className="slider-item-container">
-          <div className="item">1</div>
-          <div className="item">2</div>
-          <div className="item">3</div>
-          <div className="item">4</div>
-          <div className="item">5</div>
+          <div className="item">{this.state.title}</div>
         </div>
       </div>
     );
