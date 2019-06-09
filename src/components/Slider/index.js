@@ -31,16 +31,27 @@ class Slider extends React.Component {
 
   discoverMovies = query => {
     API.discoverMovies()
-      .then(data => this.setState({ title: data.data.results[0].title }))
+      .then(({ data }) => {
+        console.log("[DEBUG movies API", data);
+        console.log(
+          "[DEBUG] img path",
+          `https://image.tmdb.org/t/p/w400${data.results[0].backdrop_path}`
+        );
+        return this.setState({ backdrop: data.results[0].backdrop_path });
+      })
       .catch(err => console.log(err));
   };
 
   render() {
     return (
       <div>
-        <h3 className="section-title">Title of Section</h3>
+        <h3 className="section-title">Discover Movies</h3>
         <div className="slider-item-container">
-          <div className="item">{this.state.title}</div>
+          <img
+            src={`https://image.tmdb.org/t/p/w400${this.state.backdrop}`}
+            className="item"
+            alt="Movie Poster"
+          />
         </div>
       </div>
     );
