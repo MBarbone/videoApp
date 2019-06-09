@@ -1,5 +1,5 @@
 import React from "react";
-import API from "../../utils/MovieDiscoverAPI";
+import API from "../../utils/TopRated-API";
 import "./style.css";
 
 // function Slider() {
@@ -37,7 +37,7 @@ class Slider extends React.Component {
           "[DEBUG] img path",
           `https://image.tmdb.org/t/p/w400${data.results[0].backdrop_path}`
         );
-        return this.setState({ backdrop: data.results[0].backdrop_path });
+        return this.setState({ backdrop: data.results[4].backdrop_path });
       })
       .catch(err => console.log(err));
   };

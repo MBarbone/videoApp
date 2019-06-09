@@ -1,0 +1,31 @@
+.slider-item-container {
+  display: flex;
+  width: 95%;
+  margin: auto;
+}
+
+.slider-item-container:hover .item {
+  transform: translateX(-25%);
+}
+
+.item {
+  background: green;
+  flex: 0 0 19.7%;
+  text-align: center;
+  margin: 0 2px;
+  transition: transform 300ms ease 100ms;
+  width: 400px;
+}
+
+.item:hover ~ .item {
+  transform: translateX(25%);
+}
+
+.item:hover {
+  transform: scale(1.5) !important;
+}
+
+.section-title {
+  margin: 50px 0 10px 55px;
+  color: rgb(214, 213, 213);
+}
