@@ -26,7 +26,7 @@ class Hero extends React.Component {
         <iframe
           title="trailer"
           className="trailer"
-          frameborder="0"
+          frameBorder="0"
           height="100%"
           width="100%"
           src={`https://www.youtube.com/embed/${

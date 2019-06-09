@@ -19,10 +19,9 @@ import "./style.css";
 
 // export default Slider;
 
-class Slider extends React.Component {
+class TopRatedSlider extends React.Component {
   state = {
-    result: [],
-    poster: ""
+    posters: []
   };
 
   componentDidMount() {
@@ -30,32 +29,44 @@ class Slider extends React.Component {
   }
 
   topRatedMovies = query => {
-    API.topRatedMovies()
-      .then(({ data }) => {
-        console.log("[DEBUG movies API", data);
-        console.log(
-          "[DEBUG] img path",
-          `https://image.tmdb.org/t/p/w400${data.results[0].backdrop_path}`
-        );
-        return this.setState({ backdrop: data.results[0].backdrop_path });
-      })
-      .catch(err => console.log(err));
+    API.topRatedMovies().then(
+      ({ data }) => {
+        const posters = data.results;
+        console.log("POSTERS", posters);
+        this.setState({ posters });
+      },
+      error => {
+        this.setState({
+          isLoaded: true,
+          error
+        });
+      }
+    );
   };
 
   render() {
     return (
       <div>
-        <h3 className="section-title">Top Rated Movies</h3>
+        <h3 className="section-title">Discover Movies</h3>
         <div className="slider-item-container">
-          <img
-            src={`https://image.tmdb.org/t/p/w400${this.state.backdrop}`}
-            className="item"
-            alt="Movie Poster"
-          />
+          <ul>
+            {this.state.posters.map(poster => {
+              return (
+                <li className="item" key={poster.id}>
+                  <img
+                    src={`https://image.tmdb.org/t/p/w400${
+                      poster.backdrop_path
+                    }`}
+                    alt={`${poster.title} Poster`}
+                  />
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </div>
     );
   }
 }
 
-export default Slider;
+export default TopRatedSlider;
