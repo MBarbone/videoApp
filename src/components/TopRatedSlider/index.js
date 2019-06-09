@@ -26,18 +26,18 @@ class Slider extends React.Component {
   };
 
   componentDidMount() {
-    this.discoverMovies();
+    this.topRatedMovies();
   }
 
-  discoverMovies = query => {
-    API.discoverMovies()
+  topRatedMovies = query => {
+    API.topRatedMovies()
       .then(({ data }) => {
         console.log("[DEBUG movies API", data);
         console.log(
           "[DEBUG] img path",
           `https://image.tmdb.org/t/p/w400${data.results[0].backdrop_path}`
         );
-        return this.setState({ backdrop: data.results[4].backdrop_path });
+        return this.setState({ backdrop: data.results[0].backdrop_path });
       })
       .catch(err => console.log(err));
   };
@@ -45,7 +45,7 @@ class Slider extends React.Component {
   render() {
     return (
       <div>
-        <h3 className="section-title">Discover Movies</h3>
+        <h3 className="section-title">Top Rated Movies</h3>
         <div className="slider-item-container">
           <img
             src={`https://image.tmdb.org/t/p/w400${this.state.backdrop}`}
