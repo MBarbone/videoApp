@@ -48,11 +48,14 @@ class DiscoverMovieSlider extends React.Component {
     return (
       <div>
         <h3 className="section-title">Discover Movies</h3>
+        {/* <div className="slider-arrows-container">
+          <i className="fas fa-chevron-left" />
+        </div> */}
         <div className="row">
           <div className="row__inner">
             {this.state.posters.map(poster => {
               return (
-                <div class="tile">
+                <div className="tile">
                   <div className="tile" key={poster.id}>
                     <div className="tile__media">
                       <img
@@ -63,7 +66,9 @@ class DiscoverMovieSlider extends React.Component {
                       />
                     </div>
                     <div className="tile__details">
-                      <i className="far fa-thumbs-up pic" />
+                      <a href="play">
+                        <i className="far fa-play-circle play-btn" />
+                      </a>
                       <div className="tile__title">
                         <a href="play">
                           <p id="tile-movie-title">{poster.title}</p>
@@ -78,6 +83,9 @@ class DiscoverMovieSlider extends React.Component {
               );
             })}
           </div>
+          {/* <div className="slider-arrows-container">
+            <i className="fas fa-chevron-right" />
+          </div> */}
         </div>
       </div>
     );
