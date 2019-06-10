@@ -6,9 +6,14 @@
   background-color: black;
 }
 
-.fa-play {
+.home-btn {
   margin: 5px 0px 10px 10px;
   color: orangered;
+}
+
+.home-btn:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 .nav a {

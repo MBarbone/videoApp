@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <div>
       <div className="nav">
-        <i className="fas fa-play fa-3x" />
+        <i className="fas fa-play fa-3x home-btn" />
         <a href="#home">Home</a>
         <a href="#search">Search</a>
         <a href="#favorites">Favorites</a>
