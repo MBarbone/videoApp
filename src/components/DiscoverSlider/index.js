@@ -48,21 +48,36 @@ class DiscoverMovieSlider extends React.Component {
     return (
       <div>
         <h3 className="section-title">Discover Movies</h3>
-        <div className="slider-item-container">
-          <ul>
+        <div className="row">
+          <div className="row__inner">
             {this.state.posters.map(poster => {
               return (
-                <li className="item" key={poster.id}>
-                  <img
-                    src={`https://image.tmdb.org/t/p/w400${
-                      poster.backdrop_path
-                    }`}
-                    alt={`${poster.title} Poster`}
-                  />
-                </li>
+                <div class="tile">
+                  <div className="tile" key={poster.id}>
+                    <div className="tile__media">
+                      <img
+                        src={`https://image.tmdb.org/t/p/w400${
+                          poster.backdrop_path
+                        }`}
+                        alt={`${poster.title} Poster`}
+                      />
+                    </div>
+                    <div className="tile__details">
+                      <i className="far fa-thumbs-up pic" />
+                      <div className="tile__title">
+                        <a href="play">
+                          <p id="tile-movie-title">{poster.title}</p>
+                        </a>
+                        <a id="add-favorite" href="#favorite">
+                          <i className="far fa-thumbs-up" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               );
             })}
-          </ul>
+          </div>
         </div>
       </div>
     );
