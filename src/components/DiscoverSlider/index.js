@@ -66,15 +66,17 @@ class DiscoverMovieSlider extends React.Component {
                       />
                     </div>
                     <div className="tile__details">
-                      <a href="play">
-                        <i className="far fa-play-circle play-btn" />
-                      </a>
+                      <div className="play-btn-container">
+                        <a href="play">
+                          <i className="far fa-play-circle play-btn" />
+                        </a>
+                      </div>
                       <div className="tile__title">
                         <a href="play">
-                          <p id="tile-movie-title">{poster.title}</p>
+                          <p className="tile-movie-title">{poster.title}</p>
                         </a>
-                        <a id="add-favorite" href="#favorite">
-                          <i className="far fa-thumbs-up" />
+                        <a href="#favorite">
+                          <i className="far fa-thumbs-up fa-2x" />
                         </a>
                       </div>
                     </div>
