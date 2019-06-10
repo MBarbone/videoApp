@@ -126,13 +126,13 @@ a:hover {
   padding: 10px;
 }
 
-.play-btn {
+.play-media-btn {
   font-size: 35pt;
   text-align: center;
   position: absolute;
   top: 40%;
   left: 43%;
-  background: rgba(0, 0, 0, 0.308);
+  background: rgba(0, 0, 0, 0.466);
   border-radius: 100%;
 }
 
@@ -140,19 +140,19 @@ a:hover {
   font-size: 10pt;
 }
 
-.fa-thumbs-up {
+.tile-favorite-btn {
   font-size: 1rem !important;
 }
 
 .tile-movie-title:hover,
-.fa-thumbs-up:hover,
-.play-btn:hover {
+.tile-favorite-btn:hover,
+.play-media-btn:hover {
   transform: scale(1.05);
   color: white !important;
 }
 .tile-movie-title:active,
-.fa-thumbs-up:active,
-.play-btn:active {
+.tile-favorite-btn:active,
+.play-media-btn:active {
   transform: scale(1.1);
 }
 

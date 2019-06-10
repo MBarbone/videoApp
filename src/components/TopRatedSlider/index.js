@@ -47,8 +47,11 @@ class TopRatedSlider extends React.Component {
   render() {
     return (
       <div>
+        <h3 className="section-title">Top Rated Movies</h3>
+        {/* <div className="slider-arrows-container">
+          <i className="fas fa-chevron-left" />
+        </div> */}
         <div className="row">
-          <h3 className="section-title">Top Rated Movies</h3>
           <div className="row__inner">
             {this.state.posters.map(poster => {
               return (
@@ -63,15 +66,17 @@ class TopRatedSlider extends React.Component {
                       />
                     </div>
                     <div className="tile__details">
-                      <a href="play">
-                        <i className="far fa-play-circle play-btn" />
-                      </a>
+                      <div className="play-media-btn-container">
+                        <a href="play">
+                          <i className="far fa-play-circle play-media-btn" />
+                        </a>
+                      </div>
                       <div className="tile__title">
                         <a href="play">
-                          <p id="tile-movie-title">{poster.title}</p>
+                          <p className="tile-movie-title">{poster.title}</p>
                         </a>
-                        <a id="add-favorite" href="#favorite">
-                          <i className="far fa-thumbs-up" />
+                        <a href="#favorite">
+                          <i className="far fa-thumbs-up tile-favorite-btn" />
                         </a>
                       </div>
                     </div>
@@ -80,6 +85,9 @@ class TopRatedSlider extends React.Component {
               );
             })}
           </div>
+          {/* <div className="slider-arrows-container">
+            <i className="fas fa-chevron-right" />
+          </div> */}
         </div>
       </div>
     );

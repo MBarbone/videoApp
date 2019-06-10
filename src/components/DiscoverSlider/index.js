@@ -66,9 +66,9 @@ class DiscoverMovieSlider extends React.Component {
                       />
                     </div>
                     <div className="tile__details">
-                      <div className="play-btn-container">
+                      <div className="play-media-btn-container">
                         <a href="play">
-                          <i className="far fa-play-circle play-btn" />
+                          <i className="far fa-play-circle play-media-btn" />
                         </a>
                       </div>
                       <div className="tile__title">
@@ -76,7 +76,7 @@ class DiscoverMovieSlider extends React.Component {
                           <p className="tile-movie-title">{poster.title}</p>
                         </a>
                         <a href="#favorite">
-                          <i className="far fa-thumbs-up fa-2x" />
+                          <i className="far fa-thumbs-up tile-favorite-btn" />
                         </a>
                       </div>
                     </div>
