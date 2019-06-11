@@ -31,7 +31,7 @@ class Hero extends React.Component {
           width="100%"
           src={`https://www.youtube.com/embed/${
             this.state.key
-          }?autoplay=1&mute=1&controls=0&modestbranding=1&loop=1`}
+          }?autoplay=1&mute=1&controls=0&loop=1&modestbranding=1`}
         />
         <div className="hero-btn-container">
           <h4>Watch Now!</h4>
