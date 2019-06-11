@@ -47,7 +47,7 @@ class DiscoverMovieSlider extends React.Component {
   render() {
     return (
       <div>
-        <h3 className="section-title">Discover Movies</h3>
+        <h3 className="section-title">New Movies</h3>
         {/* <div className="slider-arrows-container">
           <i className="fas fa-chevron-left" />
         </div> */}
@@ -62,7 +62,7 @@ class DiscoverMovieSlider extends React.Component {
                         src={`https://image.tmdb.org/t/p/w400${
                           poster.backdrop_path
                         }`}
-                        alt={`${poster.title} Poster`}
+                        alt={`${poster.id} Poster`}
                       />
                     </div>
                     <div className="tile__details">
@@ -79,6 +79,9 @@ class DiscoverMovieSlider extends React.Component {
                           <i className="far fa-thumbs-up tile-favorite-btn" />
                         </a>
                       </div>
+                      <a href="info-toggle">
+                        <i class="fas fa-chevron-down info-toggle" />
+                      </a>
                     </div>
                   </div>
                 </div>

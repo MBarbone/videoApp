@@ -79,6 +79,9 @@ class HitTVSlider extends React.Component {
                           <i className="far fa-thumbs-up tile-favorite-btn" />
                         </a>
                       </div>
+                      <a href="info-toggle">
+                        <i class="fas fa-chevron-down info-toggle" />
+                      </a>
                     </div>
                   </div>
                 </div>

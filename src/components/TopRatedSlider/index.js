@@ -62,7 +62,7 @@ class TopRatedSlider extends React.Component {
                         src={`https://image.tmdb.org/t/p/w400${
                           poster.backdrop_path
                         }`}
-                        alt={`${poster.title} Poster`}
+                        alt={`${poster.id} Poster`}
                       />
                     </div>
                     <div className="tile__details">
@@ -79,6 +79,9 @@ class TopRatedSlider extends React.Component {
                           <i className="far fa-thumbs-up tile-favorite-btn" />
                         </a>
                       </div>
+                      <a href="info-toggle">
+                        <i class="fas fa-chevron-down info-toggle" />
+                      </a>
                     </div>
                   </div>
                 </div>

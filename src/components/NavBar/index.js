@@ -7,7 +7,7 @@ function Navbar() {
       <div className="nav">
         <i className="fas fa-play fa-3x home-btn" />
         <a href="#home">Home</a>
-        <a href="#search">Search</a>
+        <input type="text" name="search" placeholder="Search" />
         <a href="#favorites">Favorites</a>
         <a href="#settings">Settings</a>
         <a id="signOut" href="#signOut">
